@@ -103,34 +103,36 @@ close.onclick = function () {
     boxBody.classList.remove("open");
 };
 
+// chuyển màn
+function navigateTo(url) {
+    var content = document.getElementsByTagName('body');
+    content.classList.add('hidden');
+    
+    setTimeout(function() {
+      window.location.href = url;
+    }, 300); // Đợi 300ms (thời gian transition) trước khi thực hiện chuyển trang
+  }
+
 
 // login test
-// let id_login = $("#login_id")
-let id_login = document.getElementById("login_id")
-
-id_login.addEventListener("click", (e) => {
-    // alert("test ok")
-    e.preventDefault(); // Ngăn chặn hành vi mặc định của liên kết
-
-    // Gửi yêu cầu GET đến backend
-    fetch("http://127.0.0.1:8080/api/test") // Thay đổi "/api/test" thành URL endpoint thực tế của backend của bạn
-        .then(response => response.text())
-        .then(data => {
-            // Hiển thị kết quả trả về trong cửa sổ thông báo (alert)
-            // alert(data.message);
-            try {
-                // Chuyển đổi dữ liệu từ chuỗi JSON thành một đối tượng JavaScript
-                const parsedData = JSON.parse(data);
-
-                // Xử lý dữ liệu
-                alert(parsedData.message); // In ra "Hello from FastAPI!"
-
-                // Bạn có thể thực hiện các xử lý khác với dữ liệu ở đây
-            } catch (error) {
-                console.error("Lỗi khi phân tích dữ liệu JSON: ", error);
-            }
-        })
-        .catch(error => {
-            console.error("Lỗi khi gửi yêu cầu: ", error);
-        });
+let id_login = $("#login_id")
+// let id_login = document.getElementById("login_id")
+id_login.addEventListener("click",()=>{
+    // let currentURL = window.location.origin + window.location.pathname;
+    // alert(currentURL)
+    // window.location.href = "./pages/login_and_register.html";
+    // window.location.href = "http://127.0.0.1:5500/pages/login.html"
+    window.location.href = "/pages/login.html"
+    // navigateTo("http://127.0.0.1:5500/pages/login_and_register.html")
 })
+
+let id_register = $("#register_id")
+id_register.addEventListener("click",()=>{
+    
+    window.location.href = "/pages/register.html"
+    
+})
+
+
+
+

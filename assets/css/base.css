@@ -5,6 +5,7 @@
 }
 
  :root {
+    --red-color: #f40d0d;
     --primary-color: #fa9e1b;
     --white-color: #fff;
     --violet: #8d4fff;
@@ -33,7 +34,9 @@ body {
     background: #fff;
     color: #a5a5a5;
     overflow-x: hidden;
+    
 }
+
 /* Header */
 
 .header {

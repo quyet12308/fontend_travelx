@@ -107,19 +107,19 @@ footer.innerHTML = `
                     <div class="container__contact__info--img">
                       <img src="assets/images/placeholder.svg" alt="" />
                     </div>
-                    <span>316/1A Huynh Tan Phat, Quan 7</span>
+                    <span>20CN2 Tran Dang Quyet </span>
                   </div>
                   <div class="container__contact__info">
                     <div class="container__contact__info--img">
                       <img src="assets/images/message.svg" alt="" />
                     </div>
-                    <span>+84 945 999 917</span>
+                    <span>+84 123456789</span>
                   </div>
                   <div class="container__contact__info">
                     <div class="container__contact__info--img">
                       <img src="assets/images/phone-call.svg" alt="" />
                     </div>
-                    <span>trankhang@gmail.com</span>
+                    <span>quyet12306@gmail.com</span>
                   </div>
                   <div class="container__contact__info">
                     <div class="container__contact__info--img">

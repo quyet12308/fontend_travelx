@@ -23,7 +23,7 @@ header.innerHTML = `
           <a href="#">
             <li>|</li>
           </a>
-          <a href="#">
+          <a href="#" id="register_id">
             <li>Register</li>
           </a>
         </ul>
