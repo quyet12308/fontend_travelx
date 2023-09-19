@@ -1,4 +1,5 @@
-let header = document.querySelector('.header');
+document.addEventListener('DOMContentLoaded',  function() {
+  let header = document.querySelector('.header');
 header.innerHTML = `
 <div class="header__topbar">
 <div class="grid wide">
@@ -16,16 +17,8 @@ header.innerHTML = `
         </div>
       </div>
       <div class="l-6 m-4 c-4">
-        <ul class="header__topbar__container--register">
-          <a href="#" id="login_id">
-            <li>Login</li>
-          </a>
-          <a href="#">
-            <li>|</li>
-          </a>
-          <a href="#" id="register_id">
-            <li>Register</li>
-          </a>
+        <ul class="header__topbar__container--register" id="is_logined">
+          
         </ul>
       </div>
     </div>
@@ -82,3 +75,5 @@ header.innerHTML = `
 <i class="fas fa-arrow-up"></i>
 </div>
 `
+})
+

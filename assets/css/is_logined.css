@@ -1,0 +1,9 @@
+#is_logined_dispaly{
+    display: flex;
+    align-items: center;
+}
+
+#is_logined_dispaly img{
+    height: 20px;
+    width: 20px;
+}

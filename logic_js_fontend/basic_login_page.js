@@ -66,5 +66,15 @@
 //       });
 //   });
 
-  
+
+document.addEventListener('DOMContentLoaded', function() {
+    return_home = document.querySelector("#return_home").addEventListener("click",()=>{
+        window.location.href = "../index.html"
+    })
+
+    
+});
+
+
+
 

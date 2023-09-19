@@ -45,6 +45,11 @@ document.addEventListener('DOMContentLoaded',  function() {
     a = await send_data_to_server_login_basic(datacovertojson)
     if(a.status){
       alert(a.message)
+      // alert(a.token)
+      token = a.token
+      sessionStorage.setItem('tokek_for_login_session', token);
+      sessionStorage.setItem('user_name_login',username)
+
     }
     else{
       alert(a.message)

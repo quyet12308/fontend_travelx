@@ -1,6 +1,8 @@
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
-// Scroll Top
+
+document.addEventListener('DOMContentLoaded',  function() {
+    // Scroll Top
 var scrollTop = () => {
     var header = $(".header");
     header.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -122,7 +124,9 @@ id_login.addEventListener("click",()=>{
     // alert(currentURL)
     // window.location.href = "./pages/login_and_register.html";
     // window.location.href = "http://127.0.0.1:5500/pages/login.html"
+    console.log("login activite")
     window.location.href = "/pages/login.html"
+    
     // navigateTo("http://127.0.0.1:5500/pages/login_and_register.html")
 })
 
@@ -136,3 +140,5 @@ id_register.addEventListener("click",()=>{
 
 
 
+
+})
