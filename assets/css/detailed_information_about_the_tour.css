@@ -1,0 +1,103 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800);
+@font-face {
+    font-family: 'Beyond';
+    src: url(../font/beyond_the_mountains.otf) format('truetype'), url(../font/beyond_the_mountains.ttf) format('opentype')
+}
+:root {
+    --red-color: #f40d0d;
+    --primary-color: #fa9e1b;
+    --white-color: #fff;
+    --violet: #8d4fff;
+    --yellow: #fa9e1b;
+    --black: #2d2c2c;
+    --btn-black: #31124b;
+    --bg-header: rgba(54, 19, 84, .6);
+    --bg-header-scroll: rgba(54, 19, 84, .85);
+    --bg-btn: linear-gradient(to right, #fa9e1b, #8d4fff, #fa9e1b);
+    --bg-section: linear-gradient(to right, #fa9e1b, #8d4fff);
+    --offer-color: #eda84a;
+    --border: linear-gradient(to right, #fa9e1b, #8d4fff);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    background: var( --bg-btn);
+    color: #a5a5a5;
+    overflow-x: hidden;
+    
+}
+
+#container__all {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#container__all #h1_text{
+    height: 300px;
+    margin-top: 200px;
+}
+
+#container__all #h1_text h1{
+    height: 100px;
+    color: var(--white-color);
+    font-size: 90px;
+    font-family: "Beyond";
+    margin: 50px;
+    text-align: center;
+}
+
+#container__all #image-with-corner img{
+    /* display: ; */
+    height: 400px;
+    border-radius: 30px;
+    align-items: center;
+}
+
+#image-with-corner #corner-text {
+    color: var(--white-color);
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--yellow);
+    padding: 10px;
+    /* border-radius: 5px;
+     */
+     border-bottom-left-radius: 10px;
+  }
+
+
+
+#image-with-corner {
+    position: relative;
+    display: inline-block;
+}
+
+#container__all #price_text h2{
+    color: var(--white-color);
+    margin-top: 30px;
+}
+
+#container__all #text_detail{
+    width: 60%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#container__all #text_detail p{
+    color: var(--white-color);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.5;
+}

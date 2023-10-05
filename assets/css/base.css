@@ -5,6 +5,7 @@
 }
 
  :root {
+    --grey-color: rgb(122, 117, 117);
     --red-color: #f40d0d;
     --primary-color: #fa9e1b;
     --white-color: #fff;
@@ -522,3 +523,44 @@ body {
 .copyright a:hover {
     opacity: .9;
 }
+
+/* code của quyết */
+
+#is_logined_display{
+    position: relative;
+      display: inline-block;
+}
+#is_logined_display #submenu_login{
+    display: none;
+      position: absolute;
+      height: auto;
+      width: auto;
+      /* bottom: -100px; */
+      /* left: -100px; */
+      top: 30px;
+      background-color: #f9f9f9;
+      padding: 8px;
+      border: 1px solid #ccc;
+      flex-direction: column;
+}
+
+#is_logined_display #submenu_login ul 
+ {
+    /* display: block; */
+    display: flex; flex-direction: column;
+    color: var(--black);
+    align-items: flex-start;
+  }
+  #is_logined_display  #submenu_login ul li {
+    /* list-style: none; */
+    width: 100%;
+    text-align: left;
+  }
+
+  #is_logined_display #submenu_login ul li:hover{
+    background-color: var(--grey-color);
+    color: var(--white-color);
+  }
+/* #is_logined_display:hover #submenu_login{
+    display: block;
+} */

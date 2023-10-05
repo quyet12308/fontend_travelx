@@ -176,3 +176,15 @@
         padding-right: 15px;
     }
 }
+
+
+/* css contact form error */
+#contact_input_error{
+    color: red;
+    
+    /* margin: 40px; */
+    padding-top: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}

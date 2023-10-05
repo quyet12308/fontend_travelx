@@ -365,18 +365,30 @@
     overflow: hidden;
 }
 
-.tour__item--btn a {
+.tour__item--btn div {
     display: block;
+    /* font-size: 13px; */
+    /* font-weight: 700; */
+    /* color: #fff; */
+    /* text-transform: uppercase; */
+    /* line-height: 53px;
+    padding-left: 46px;
+    padding-right: 46px;
+    white-space: nowrap;
+    z-index: 2; */
+    cursor: pointer;
+    
+}
+.tour__item--btn div h5{
+    color: #fff;
     font-size: 13px;
     font-weight: 700;
-    color: #fff;
     text-transform: uppercase;
     line-height: 53px;
     padding-left: 46px;
     padding-right: 46px;
     white-space: nowrap;
     z-index: 2;
-    
 }
 
 .tour__item--btn span {

@@ -47,8 +47,12 @@ document.addEventListener('DOMContentLoaded',  function() {
       alert(a.message)
       // alert(a.token)
       token = a.token
+      email = a.email
       sessionStorage.setItem('tokek_for_login_session', token);
       sessionStorage.setItem('user_name_login',username)
+      sessionStorage.setItem('email_login',email)
+      
+      window.location.href = "home.html"
 
     }
     else{

@@ -15,10 +15,7 @@ footer.innerHTML = `
         </div>
         <div class="container__about--text">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Vivamus quis vu lputate eros, iaculis consequat nisl. Nunc
-            et suscipit urna. Integer eleme ntum orci eu vehicula
-            pretium.
+          Welcome to my travel site! We offer unparalleled travel experiences that combine adventure and relaxation. From attractive destinations to quality tours, we will accompany you on your journey to explore the world. Start your adventure today!
           </p>
         </div>
         <div class="container__about--social">
