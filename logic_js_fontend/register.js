@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var username = document.getElementById('username1').value;
         var email = document.getElementById('email1').value;
         var password = document.getElementById('password1').value;
+        var password2 = document.getElementById('password2').value;
     
         if (username.length < 6) {
           registerError.innerText = 'Tên đăng ký phải có ít nhất 6 ký tự.';
@@ -32,6 +33,10 @@ document.addEventListener('DOMContentLoaded', function() {
     
         if (password.length < 6 || !/\d/.test(password) || !/[a-zA-Z]/.test(password)) {
           registerError.innerText = 'Mật khẩu phải có ít nhất 6 ký tự và bao gồm cả chữ và số.';
+          return;
+        }
+        if(password != password2){
+          registerError.innerText = 'Mật khẩu nhập lại không đúng';
           return;
         }
     
@@ -67,6 +72,9 @@ document.addEventListener('DOMContentLoaded', function() {
         else{
           alert("Bạn chưa đăng ký thành công")
         }
+      }
+      else{
+        alert(a.message)
       }
     });
 })

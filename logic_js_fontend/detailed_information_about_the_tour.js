@@ -22,9 +22,14 @@ document.addEventListener('DOMContentLoaded', async ()=> {
         tourist_destination_location = message.tourist_destination_location
         number_of_stars = message.number_of_stars
         number_of_travel_days = message.number_of_travel_days
+        five_day_weather_datas = message.five_day_weather_datas
+
+        // weather data 
+        
 
         container_detailed_if_tour.innerHTML = `
             <div id="container__all">
+            
             <div id="h1_text"><h1>${tourist_destination_name}</h1></div>
             
             <div id="image-with-corner">
@@ -34,13 +39,68 @@ document.addEventListener('DOMContentLoaded', async ()=> {
             </div>
              
             <div id="price_text"><h2>Only ${price}$ for family tour ${number_of_travel_days} days </h2></div>
+            <div class="btn_bgc"><a href="#" id="btn_book_now">BOOK NOW</a></div>
             <div id="weather_info_table">
-            
+            <div id="weather_header_text"><h2>Weather for the next 5 days</h2></div>  
+            <table id="weather_table">
+            <thead   style="border: #555 1px solid;">
+            <tr>
+            <th><h4 class="h4_weather_data_text">${five_day_weather_datas[0]["dt_txt"]}</h4></th>
+            <th><h4 class="h4_weather_data_text">${five_day_weather_datas[1]["dt_txt"]}</h4></th>
+            <th><h4 class="h4_weather_data_text">${five_day_weather_datas[2]["dt_txt"]}</h4></th>
+            <th><h4 class="h4_weather_data_text">${five_day_weather_datas[3]["dt_txt"]}</h4></th>
+            <th><h4 class="h4_weather_data_text">${five_day_weather_datas[4]["dt_txt"]}</h4></th>
+            </tr>
+          </thead>
+          <tbody>
+              <tr>
+              <td><h4 class="h4_weather_data_text">${five_day_weather_datas[0]["temp"]} C</h4></td>
+              <td><h4 class="h4_weather_data_text">${five_day_weather_datas[1]["temp"]} C</h4></td>
+              <td><h4 class="h4_weather_data_text">${five_day_weather_datas[2]["temp"]} C</h4></td>
+              <td><h4 class="h4_weather_data_text">${five_day_weather_datas[3]["temp"]} C</h4></td>
+              <td><h4 class="h4_weather_data_text">${five_day_weather_datas[4]["temp"]} C</h4></td>
+              </tr>
+              <tr>
+              <td><img src=${five_day_weather_datas[0]["icon"]} alt=""></td>
+              <td><img src=${five_day_weather_datas[1]["icon"]} alt=""></td>
+              <td><img src=${five_day_weather_datas[2]["icon"]} alt=""></td>
+              <td><img src=${five_day_weather_datas[3]["icon"]} alt=""></td>
+              <td><img src=${five_day_weather_datas[4]["icon"]} alt=""></td>
+              </tr>
+              <tr>
+              <td><h4 class="h4_weather_data_text">${five_day_weather_datas[0]["description"]} </h4></td>
+              <td><h4 class="h4_weather_data_text">${five_day_weather_datas[1]["description"]} </h4></td>
+              <td><h4 class="h4_weather_data_text">${five_day_weather_datas[2]["description"]} </h4></td>
+              <td><h4 class="h4_weather_data_text">${five_day_weather_datas[3]["description"]} </h4></td>
+              <td><h4 class="h4_weather_data_text">${five_day_weather_datas[4]["description"]} </h4></td>
+              </tr>
+              <tr>
+              <td><h4 class="h4_weather_data_text">pop ${five_day_weather_datas[0]["pop"]} %</h4></td>
+              <td><h4 class="h4_weather_data_text">pop ${five_day_weather_datas[1]["pop"]} %</h4></td>
+              <td><h4 class="h4_weather_data_text">pop ${five_day_weather_datas[2]["pop"]} %</h4></td>
+              <td><h4 class="h4_weather_data_text">pop ${five_day_weather_datas[3]["pop"]} %</h4></td>
+              <td><h4 class="h4_weather_data_text">pop ${five_day_weather_datas[4]["pop"]} %</h4></td>
+              </tr>
+              <tr>
+              <td><h4 class="h4_weather_data_text">humidity ${five_day_weather_datas[0]["humidity"]} %</h4></td>
+              <td><h4 class="h4_weather_data_text">humidity ${five_day_weather_datas[1]["humidity"]} %</h4></td>
+              <td><h4 class="h4_weather_data_text">humidity ${five_day_weather_datas[2]["humidity"]} %</h4></td>
+              <td><h4 class="h4_weather_data_text">humidity ${five_day_weather_datas[3]["humidity"]} %</h4></td>
+              <td><h4 class="h4_weather_data_text">humidity ${five_day_weather_datas[4]["humidity"]} %</h4></td>
+              </tr>
+          </tbody>
+            </table>
+              
             </div>
             <div id="text_detail"><p>${tourist_destination_describe}</p></div>
             
         </div>
         `
+
+       let btn_book_now = document.querySelector("#btn_book_now");
+       btn_book_now.addEventListener("click",()=>{
+        window.location.href = "booking_tour.html"
+       })
     }
 
 });

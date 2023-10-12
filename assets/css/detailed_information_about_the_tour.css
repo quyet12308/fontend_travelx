@@ -44,16 +44,18 @@ body {
 }
 
 #container__all #h1_text{
-    height: 300px;
-    margin-top: 200px;
+    height: auto;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 #container__all #h1_text h1{
-    height: 100px;
+    /* height: 100px; */
     color: var(--white-color);
     font-size: 90px;
     font-family: "Beyond";
-    margin: 50px;
+    /* margin: 50px; */
     text-align: center;
 }
 
@@ -100,4 +102,51 @@ body {
     font-size: 20px;
     text-align: justify;
     line-height: 1.5;
+}
+
+#container__all #weather_info_table{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#container__all .h4_weather_data_text{
+    color: var(--white-color);
+}
+
+#container__all #weather_table{
+    border-collapse: collapse; /* Để loại bỏ khoảng cách giữa các ô */
+    width: 100%;
+}
+
+#weather_header_text h2{
+    color: var(--white-color);
+    /* margin-top: 20px; */
+    margin-bottom: 20px;
+}
+
+#container__all #weather_table th,#container__all #weather_table td {
+    border: 1px solid var(--white-color); /* Định rõ viền cho các ô */
+    padding: 8px; /* Để tạo khoảng đệm bên trong các ô */
+    text-align: left;
+  }
+
+#container__all .btn_bgc{
+    margin-top: 20px;
+    background-color: pink; /* Đặt màu nền là màu hồng */
+    display: inline-block; /* Để nút chỉ chiếm không gian cần thiết */
+    /* Để tạo khoảng đệm bên trong nút */
+    /* padding: 10px;  */
+    border-radius: 10px; /* Để bo viền của nút */
+  }
+  
+  
+
+#container__all .btn_bgc #btn_book_now{
+    display: inline-block; /* Để nút chỉ chiếm không gian cần thiết */
+    padding: 10px 20px; /* Để tạo khoảng đệm bên trong nút */
+    background-color: pink; /* Đặt màu nền là màu hồng */
+    color: white; /* Đặt màu chữ là màu trắng */
+    text-decoration: none; /* Loại bỏ gạch chân cho liên kết */
+    border: 2px solid black; /* Đặt bo viền của nút */
+    border-radius: 5px; /* Để bo viền của nút */
 }

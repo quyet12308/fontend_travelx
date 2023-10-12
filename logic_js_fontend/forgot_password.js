@@ -66,6 +66,9 @@ document.addEventListener('DOMContentLoaded', function() {
           alert("Bạn chưa thay đổi mật khẩu thành công")
         }
       }
+      else{
+        alert(a.message)
+      }
     });
 })
 

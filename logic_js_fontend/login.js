@@ -48,10 +48,12 @@ document.addEventListener('DOMContentLoaded',  function() {
       // alert(a.token)
       token = a.token
       email = a.email
+      avata_img = a.avata_img
       sessionStorage.setItem('tokek_for_login_session', token);
       sessionStorage.setItem('user_name_login',username)
       sessionStorage.setItem('email_login',email)
-      
+      sessionStorage.setItem("avatar_img",avata_img)
+
       window.location.href = "home.html"
 
     }

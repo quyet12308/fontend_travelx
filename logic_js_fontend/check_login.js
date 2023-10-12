@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let login_session_token =  sessionStorage.getItem('tokek_for_login_session')
     let login_username = sessionStorage.getItem('user_name_login')
     let login_email = sessionStorage.getItem('email_login')
+    let avatar_img = sessionStorage.getItem("avatar_img")
   //element
 
     let is_logined = document.querySelector("#is_logined")
@@ -20,7 +21,9 @@ document.addEventListener('DOMContentLoaded', function() {
     let emailInput_contact_screen = document.querySelector('#emailInput_contact_screen');
 
     
-
+    if(avatar_img === null){
+      avatar_img = "assets/images/icon_persion.jpg"
+    }
 
 
     let isLogined = false;
@@ -29,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
         is_logined.innerHTML = 
         `
         <div id="is_logined_display" style="display: flex; align-items: center;justify-content: right;cursor: pointer;">
-          <img src="/assets/images/icon_persion.jpg" alt="" style="height: 20px;">
+          <img src=${avatar_img} alt="" style="height: 20px;" id="avata_show">
           <p style="margin-left: 10px;color: #fa9e1b;">${login_username}</p>
           <div id="submenu_login">
           <ul >
@@ -40,6 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
     </div>
         </div>
         `
+        
         isLogined = true;
 
     }
@@ -85,6 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
       sessionStorage.removeItem('tokek_for_login_session');
       sessionStorage.removeItem('user_name_login');
       sessionStorage.removeItem('email_login');
+      sessionStorage.removeItem('avatar_img');
 
       location.reload();
     });
