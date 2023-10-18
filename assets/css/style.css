@@ -363,6 +363,7 @@
     height: 53px;
     border-radius: 27px;
     overflow: hidden;
+    padding: 16px;
 }
 
 .tour__item--btn div {
@@ -402,6 +403,15 @@
     margin-top: -2px;
 }
 
+.tour__item--btn a {
+    text-decoration: none;
+    color: var(--white-color);
+  }
+  
+  .tour__item--btn a span {
+    border-bottom: none;
+  }
+
 .tour__item--btn span:first-child {
     margin-left: 10px;
 }
@@ -425,6 +435,10 @@
     z-index: -1;
     transition: all 400ms ease;
     display: block;
+}
+
+.tour__btn__bgc h5{
+    text-align: center;
 }
 
 .tour__item--btn:hover .tour__btn__bgc {
@@ -457,6 +471,9 @@
     color: #fa9e1b;
 }
 
+.item_rating i:nth-child(5) {
+    color: #fa980f;
+}
 
 /* Package */
 

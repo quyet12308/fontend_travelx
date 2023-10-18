@@ -1,5 +1,9 @@
 let url_detailed_basic = "http://localhost:8080/api/get_tourist_destination_information_by_name"
 
+function containsPage(str) {
+  return str.includes("pages");
+}
+
 document.addEventListener('DOMContentLoaded', async ()=> {
     let container_detailed_if_tour = document.querySelector("#container_detailed_if_tour")
 
@@ -99,7 +103,21 @@ document.addEventListener('DOMContentLoaded', async ()=> {
 
        let btn_book_now = document.querySelector("#btn_book_now");
        btn_book_now.addEventListener("click",()=>{
-        window.location.href = "booking_tour.html"
+        let login_session_token =  sessionStorage.getItem('tokek_for_login_session')
+        if(login_session_token){
+          window.location.href = "booking_tour.html"
+        }
+        else{
+          alert("Bạn cần đăng nhập để xem chi tiết")
+          let currentURL = window.location.href;
+    if(containsPage(currentURL)){
+      window.location.href = "login.html"
+    }
+    else{
+      window.location.href = "pages/login.html"
+    }
+        }
+        
        })
     }
 

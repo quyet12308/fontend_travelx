@@ -14,9 +14,9 @@ footer.innerHTML = `
           </a>
         </div>
         <div class="container__about--text">
-          <p>
-          Welcome to my travel site! We offer unparalleled travel experiences that combine adventure and relaxation. From attractive destinations to quality tours, we will accompany you on your journey to explore the world. Start your adventure today!
-          </p>
+        <p>
+        Chào mừng đến với trang web du lịch của tôi! Chúng tôi mang đến những trải nghiệm du lịch tuyệt vời kết hợp giữa phiêu lưu và thư giãn. Từ những điểm đến hấp dẫn đến những tour du lịch chất lượng, chúng tôi sẽ đồng hành cùng bạn trên hành trình khám phá thế giới. Bắt đầu cuộc phiêu lưu của bạn ngày hôm nay!
+      </p>
         </div>
         <div class="container__about--social">
           <ul>

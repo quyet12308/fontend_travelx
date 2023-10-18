@@ -5,28 +5,38 @@ function containsPage(str) {
 }
 
 function check_login(name_){
-  let login_session_token =  sessionStorage.getItem('tokek_for_login_session')
-  if (login_session_token){
+
+  let currentURL = window.location.href;
     alert(name_)
     sessionStorage.setItem("tourist_destination_name",name_)
-    let currentURL = window.location.href;
     if(containsPage(currentURL)){
       window.location.href = "detailed_information_about_the_tour.html"
     }
     else{
       window.location.href = "pages/detailed_information_about_the_tour.html"
     }
-  }else{
-    alert("Bạn cần đăng nhập để xem chi tiết")
-    let currentURL = window.location.href;
-    if(containsPage(currentURL)){
-      window.location.href = "login.html"
-    }
-    else{
-      window.location.href = "pages/login.html"
-    }
+  // let login_session_token =  sessionStorage.getItem('tokek_for_login_session')
+  // if (login_session_token){
+  //   alert(name_)
+  //   sessionStorage.setItem("tourist_destination_name",name_)
+  //   let currentURL = window.location.href;
+  //   if(containsPage(currentURL)){
+  //     window.location.href = "detailed_information_about_the_tour.html"
+  //   }
+  //   else{
+  //     window.location.href = "pages/detailed_information_about_the_tour.html"
+  //   }
+  // }else{
+  //   alert("Bạn cần đăng nhập để xem chi tiết")
+  //   let currentURL = window.location.href;
+  //   if(containsPage(currentURL)){
+  //     window.location.href = "login.html"
+  //   }
+  //   else{
+  //     window.location.href = "pages/login.html"
+  //   }
     
-  }
+  // }
 }
 
 

@@ -32,7 +32,7 @@ header.innerHTML = `
       <div class="l-3 m-6 c-8">
         <a href="#">
           <div class="header__nav__container--logo">
-            <img src="assets/images/logo.webp" alt="" /> Travelix
+            <img src="../assets/images/logo.webp" alt="" /> Travelix
           </div>
         </a>
       </div>

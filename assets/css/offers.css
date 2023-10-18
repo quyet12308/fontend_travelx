@@ -73,6 +73,29 @@
     margin-bottom: 20px;
 }
 
+.offers__container__filter label {
+    color: var(--black);
+    font-size: 20px;
+    padding: 20px 30px;
+}
+
+.offers__container__filter select{
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.offers__container__filter select option{
+    padding: 8px;
+}
+
+.offers__container__filter select:hover{
+    cursor: pointer;
+}
+
 .offers__container__filter li i {
     padding-left: 55px;
     line-height: 48px;

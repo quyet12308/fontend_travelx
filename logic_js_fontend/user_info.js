@@ -2,6 +2,19 @@ url_get_user_infor = "http://localhost:8080/api/get_user_infor";
 url_edit_user_infor = "http://localhost:8080/api/edit_user_infor";
 
 document.addEventListener('DOMContentLoaded', async function() {
+    // time
+    let tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    let oneYearLater = new Date();
+    oneYearLater.setFullYear(oneYearLater.getFullYear() + 1);
+
+    let today = new Date();
+    let eighteenYearsAgo = new Date();
+    eighteenYearsAgo.setFullYear(today.getFullYear() - 18);
+
+    let oneHundredFiftyYearsAgo = new Date();
+    oneHundredFiftyYearsAgo.setFullYear(today.getFullYear() - 150);
+
     // session
     let login_session_token =  sessionStorage.getItem('tokek_for_login_session')
     let login_username = sessionStorage.getItem('user_name_login')
@@ -95,6 +108,25 @@ document.addEventListener('DOMContentLoaded', async function() {
         if(birthday_text.value != birthday_){
           console.log("date change")
           console.log(`${birthday_text.value} vs ${birthday_}`)
+          // Chuyển đổi giá trị ngày nhập vào thành đối tượng Date
+          let selectedDate = new Date(birthday_text.value);
+          if (selectedDate >= eighteenYearsAgo ) {
+            error_edit_user.innerText = "Bạn chưa đủ tuổi ."
+            return
+          }
+          else if(selectedDate <= oneHundredFiftyYearsAgo){
+            error_edit_user.innerText = "Bạn quá già rồi ."
+            return
+          }
+          // if (selectedDate <= tomorrow ) {
+          //   // console.log("Ngày nhập vào phải là ngày trong tương lai gần");
+          //   error_edit_user.innerText = "Ngày nhập vào phải là ngày trong tương lai gần"
+          //   return
+            
+          // } else if (selectedDate >= oneYearLater) {
+          //   error_edit_user.innerText = "Ngày nhập vào phải là ngày trong tương lai gần"
+          //   return
+          // }
         }
         if(password_text.value != password_){
           console.log("pass change")

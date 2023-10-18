@@ -22,6 +22,7 @@
     <script src="../layout/footer.js"></script>
     <script src="../logic_js_fontend/check_login.js"></script>
     <script src="../assets/js/main.js " type="text/javascript "></script>
+    <script src="../logic_js_fontend/offer.js"></script>
     
 </head>
 
@@ -40,27 +41,27 @@
                 <div class="row">
                     <div class="search__container__tab d-flex active">
                         <img src="../assets/images/hotel.webp" alt="">
-                        <span>Hotels</span>
+                        <span>Khách sạn</span>
                     </div>
                     <div class="search__container__tab d-flex">
                         <img src="../assets/images/car.webp" alt="">
-                        <span>Car rentals</span>
+                        <span>Chuyến Xe</span>
                     </div>
                     <div class="search__container__tab d-flex">
                         <img src="../assets/images/fly.webp" alt="">
-                        <span>Flights</span>
+                        <span>Chuyến bay</span>
                     </div>
                     <div class="search__container__tab d-flex">
                         <img src="../assets/images/trip.webp" alt="">
-                        <span>Trips</span>
+                        <span>Chuyến đi</span>
                     </div>
                     <div class="search__container__tab d-flex">
                         <img src="../assets/images/cruises.webp" alt="">
-                        <span>Cuises</span>
+                        <span>Thuyền</span>
                     </div>
                     <div class="search__container__tab d-flex">
                         <img src="../assets/images/activities.webp" alt="">
-                        <span>Activities</span>
+                        <span>Hoạt động</span>
                     </div>
                 </div>
             </div>
@@ -68,7 +69,7 @@
                 <div class="row">
                     <div class="search__container--item l-4 m-6 c-12">
                         <div>
-                            <span>Destination</span>
+                            <span>Mô tả</span>
                         </div>
                         <input type="text">
                     </div>
@@ -86,7 +87,7 @@
                     </div>
                     <div class="search__container--item l-1 m-3 c-6">
                         <div>
-                            <span>Adults</span>
+                            <span>Người lớn</span>
                         </div>
                         <select name="" id="">
                             <option>01</option>
@@ -96,7 +97,7 @@
                     </div>
                     <div class="search__container--item l-1 m-3 c-6">
                         <div>
-                            <span>CHILDREN</span>
+                            <span>Trẻ em</span>
                         </div>
                         <select name="" id="">
                             <option>0</option>
@@ -109,35 +110,35 @@
                             <div class="row">
                                 <div class="search__container__extras--item">
                                     <input type="checkbox" name="#" id="#">
-                                    <label for="#">Pet Friendly</label>
+                                    <label for="#">Thân thiện với thú cưng</label>
                                 </div>
                                 <div class="search__container__extras--item">
                                     <input type="checkbox" name="#" id="#">
-                                    <label for="#">Car Parking</label>
+                                    <label for="#">Có bãi đậu xe</label>
                                 </div>
                                 <div class="search__container__extras--item">
                                     <input type="checkbox" name="#" id="#">
-                                    <label for="#">Wireless Internet</label>
+                                    <label for="#">Có Mạng không dây</label>
                                 </div>
                                 <div class="search__container__extras--item">
                                     <input type="checkbox" name="#" id="#">
-                                    <label for="#">Reservations</label>
+                                    <label for="#">Đặt chỗ</label>
                                 </div>
                                 <div class="search__container__extras--item">
                                     <input type="checkbox" name="#" id="#">
-                                    <label for="#">Private Parking</label>
+                                    <label for="#">Bãi đậu xe tư nhân</label>
                                 </div>
                                 <div class="search__container__extras--item">
                                     <input type="checkbox" name="#" id="#">
-                                    <label for="#">Smoking Area</label>
+                                    <label for="#">Khu vực hút thuốc</label>
                                 </div>
                                 <div class="search__container__extras--item">
                                     <input type="checkbox" name="#" id="#">
-                                    <label for="#">Wheelchair Accessible</label>
+                                    <label for="#">Xe lăn cho người khuyết tật</label>
                                 </div>
                                 <div class="search__container__extras--item">
                                     <input type="checkbox" name="#" id="#">
-                                    <label for="#">Pool</label>
+                                    <label for="#">Hồ bơi</label>
                                 </div>
                             </div>
                         </div>
@@ -157,58 +158,103 @@
         <div class="offers__container">
             <div class="grid wide custom">
                 <div class="row">
+                    
                     <div class="offers__container__filter">
-                        <ul>
-                            <li>
-                                Price
+                        <label for="">Gía</label>
+                        <select name="price" id="price_offer">
+                            <option value="show_all_price">Hiển thị tất cả</option>
+                            <option value="ascending_price">Tăng dần</option>
+                            <option value="decrease_price">Giảm dần</option>
+                            
+                        </select>
+                        <label for="">Vị trí</label>
+                        <select name="location" id="location_offer">
+                            <option value="default_location">Mặc định</option>
+                            <option value="a_to_z_location">theo chữ cái</option>
+                            
+                        </select>
+                        <label for="">Sao</label>
+                        <select name="star" id="star_offer">
+                            <option value="show_all_star">Hiển thị tất cả</option>
+                            <option value="ascending_star">Tăng dần</option>
+                            <option value="decrease_star">Giảm dần</option>
+                            <option value="3_star">3</option>
+                            <option value="4_star">4</option>
+                            <option value="5_star">5</option>
+                            
+                        </select>
+                        <label for="">Khoảng cách</label>
+                        <select name="distance" id="distance_offer">
+                            <option value="default_distance">Mặc định</option>
+                            <!-- <option value="">Khoảng cách</option>
+                            <option value="">Khoảng cách</option> -->
+                            
+                        </select>
+                        <label for="">Reviews</label>
+                        <select name="review" id="review_offer">
+                            <option value="default_review">Mặc định</option>
+                            <option value="ascending_review">Tăng dần</option>
+                            <option value="decrease_review">Giảm dần</option>
+                            
+                        </select>
+                        
+                        <!-- <ul>
+                            <li id="price">
+                                Gía
                                 <i class="fa fa-chevron-down"></i>
                                 <ul class="offers__container__filter--list">
-                                    <li><span>Show all</span></li>
-                                    <li><span>Ascending</span></li>
+                                    <li id="show_all_price"><span>Hiển thị tất cả</span></li>
+                                    <li id="ascending_price"><span>Tăng dần</span></li>
+                                    <li id="decrease_price"><span>Giảm dần</span></li>
+                                    
+
+                                </ul>
+                            </li>
+                            
+                                
+                            <li>
+                                Vị trí
+                                <i class="fa fa-chevron-down"></i>
+                                <ul class="offers__container__filter--list">
+                                    <li id="default_location"><span>Mặc định</span></li>
+                                    <li id="a_to_z_location"><span>theo chữ cái</span></li>
                                 </ul>
                             </li>
                             <li>
-                                Loaction
+                                Sao
                                 <i class="fa fa-chevron-down"></i>
                                 <ul class="offers__container__filter--list">
-                                    <li><span>Default</span></li>
-                                    <li><span>Alphabetical</span></li>
+                                    <li id="show_all_star"><span>Hiển thị tất cả</span></li>
+                                    <li id="ascending_star"><span>Tăng dần</span></li>
+                                    <li id="decrease_star"><span>Giảm dần</span></li>
+                                    <li id="3_star"><span>3</span></li>
+                                    <li id="4_star"><span>4</span></li>
+                                    <li id="5_star"><span>5</span></li>
                                 </ul>
                             </li>
                             <li>
-                                Stars
+                                Khoảng cách từ trung tâm
                                 <i class="fa fa-chevron-down"></i>
                                 <ul class="offers__container__filter--list">
-                                    <li><span>Show all</span></li>
-                                    <li><span>Ascending</span></li>
-                                    <li><span>3</span></li>
-                                    <li><span>4</span></li>
-                                    <li><span>5</span></li>
-                                </ul>
-                            </li>
-                            <li>
-                                Distance from center
-                                <i class="fa fa-chevron-down"></i>
-                                <ul class="offers__container__filter--list">
-                                    <li><span>Distance</span></li>
-                                    <li><span>Distance</span></li>
-                                    <li><span>Distance</span></li>
+                                    <li><span>Khoảng cách</span></li>
+                                    <li><span>Khoảng cách</span></li>
+                                    <li><span>Khoảng cách</span></li>
                                 </ul>
                             </li>
                             <li>
                                 Reviews
                                 <i class="fa fa-chevron-down"></i>
                                 <ul class="offers__container__filter--list">
-                                    <li><span>Review</span></li>
-                                    <li><span>Review</span></li>
-                                    <li><span>Review</span></li>
+                                    <li id="default_review"><span>Mặc định</span></li>
+                                    <li id="ascending_review"><span>Tăng dần</span></li>
+                                    <li id="decrease_review"><span>Giảm dần</span></li>
                                 </ul>
                             </li>
-                        </ul>
+                        </ul> -->
                     </div>
                 </div>
-                <div class="row offers__container__items">
-                    <div class="col l-12 m-12 c-12 s-12">
+                <div class="row offers__container__items" id="offers__container__items_id">
+                    <!-- <div class="col l-12 m-12 c-12 s-12">
                         <div class="offer__container__item">
                             <div class="row">
                                 <div class="col l-4 m-6 c-12 s-12">
@@ -230,7 +276,7 @@
                                         </div>
                                         <div class="offers__item__price">
                                             $70
-                                            <span>per night</span>
+                                            <span>Mỗi đêm</span>
                                         </div>
                                         <div class="item_rating">
                                             <i class="fa fa-star"></i>
@@ -239,7 +285,7 @@
                                             <i class="fa fa-star"></i>
                                             <i class="far fa-star"></i>
                                         </div>
-                                        <p>Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Lorem ipsum dolor sit amet.</p>
+                                        <p>Nơi nghỉ dưỡng rất tốt , đồ ăn cũng rất ngon , dịch vụ khá tốt đặc biệt là nơi này rất đẹp . Tôi rất hài lòng , lần sau tôi sẽ quay lại </p>
                                         <div class="offer__item--icon">
                                             <img src="../assets/images/xpost.png.pagespeed.ic.8S9NJqfU1S.webp" alt="">
                                             <img src="../assets/images/xcompass.png.pagespeed.ic.BMlGyHi2Dm.webp" alt="">
@@ -279,7 +325,7 @@
                                         </div>
                                         <div class="offers__item__price">
                                             $50
-                                            <span>per night</span>
+                                            <span>Mỗi đêm</span>
                                         </div>
                                         <div class="item_rating">
                                             <i class="fa fa-star"></i>
@@ -288,7 +334,7 @@
                                             <i class="fa fa-star"></i>
                                             <i class="far fa-star"></i>
                                         </div>
-                                        <p>Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Lorem ipsum dolor sit amet.</p>
+                                        <p>Nơi nghỉ dưỡng rất tốt , đồ ăn cũng rất ngon , dịch vụ khá tốt đặc biệt là nơi này rất đẹp . Tôi rất hài lòng , lần sau tôi sẽ quay lại </p>
                                         <div class="offer__item--icon">
                                             <img src="../assets/images/xpost.png.pagespeed.ic.8S9NJqfU1S.webp" alt="">
                                             <img src="../assets/images/xcompass.png.pagespeed.ic.BMlGyHi2Dm.webp" alt="">
@@ -328,7 +374,7 @@
                                         </div>
                                         <div class="offers__item__price">
                                             $90
-                                            <span>per night</span>
+                                            <span>Mỗi đêm</span>
                                         </div>
                                         <div class="item_rating">
                                             <i class="fa fa-star"></i>
@@ -337,7 +383,7 @@
                                             <i class="fa fa-star"></i>
                                             <i class="far fa-star"></i>
                                         </div>
-                                        <p>Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Lorem ipsum dolor sit amet.</p>
+                                        <p>Nơi nghỉ dưỡng rất tốt , đồ ăn cũng rất ngon , dịch vụ khá tốt đặc biệt là nơi này rất đẹp . Tôi rất hài lòng , lần sau tôi sẽ quay lại </p>
                                         <div class="offer__item--icon">
                                             <img src="../assets/images/xpost.png.pagespeed.ic.8S9NJqfU1S.webp" alt="">
                                             <img src="../assets/images/xcompass.png.pagespeed.ic.BMlGyHi2Dm.webp" alt="">
@@ -377,7 +423,7 @@
                                         </div>
                                         <div class="offers__item__price">
                                             $30
-                                            <span>per night</span>
+                                            <span>Mỗi đêm</span>
                                         </div>
                                         <div class="item_rating">
                                             <i class="fa fa-star"></i>
@@ -386,7 +432,7 @@
                                             <i class="fa fa-star"></i>
                                             <i class="far fa-star"></i>
                                         </div>
-                                        <p>Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Lorem ipsum dolor sit amet.</p>
+                                        <p>Nơi nghỉ dưỡng rất tốt , đồ ăn cũng rất ngon , dịch vụ khá tốt đặc biệt là nơi này rất đẹp . Tôi rất hài lòng , lần sau tôi sẽ quay lại </p>
                                         <div class="offer__item--icon">
                                             <img src="../assets/images/xpost.png.pagespeed.ic.8S9NJqfU1S.webp" alt="">
                                             <img src="../assets/images/xcompass.png.pagespeed.ic.BMlGyHi2Dm.webp" alt="">
@@ -426,7 +472,7 @@
                                         </div>
                                         <div class="offers__item__price">
                                             $30
-                                            <span>per night</span>
+                                            <span>Mỗi đêm</span>
                                         </div>
                                         <div class="item_rating">
                                             <i class="fa fa-star"></i>
@@ -435,7 +481,7 @@
                                             <i class="fa fa-star"></i>
                                             <i class="far fa-star"></i>
                                         </div>
-                                        <p>Suspendisse potenti. In faucibus massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Lorem ipsum dolor sit amet.</p>
+                                        <p>Nơi nghỉ dưỡng rất tốt , đồ ăn cũng rất ngon , dịch vụ khá tốt đặc biệt là nơi này rất đẹp . Tôi rất hài lòng , lần sau tôi sẽ quay lại </p>
                                         <div class="offer__item--icon">
                                             <img src="../assets/images/xpost.png.pagespeed.ic.8S9NJqfU1S.webp" alt="">
                                             <img src="../assets/images/xcompass.png.pagespeed.ic.BMlGyHi2Dm.webp" alt="">
@@ -452,7 +498,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

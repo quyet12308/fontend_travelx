@@ -44,5 +44,73 @@ body{
 }
 
 #container_all_booking_tour_page #logo_booking_tour_page{
-    height: 60px;
+    height: 90px;
+}
+
+#container_all_booking_tour_page #user_infor_in_booking_tour_page{
+    display: inline-block;
+    /* text-align: center; */
+    margin-left: 50px;
+}
+
+#container_all_booking_tour_page #name_tour_in_booking_tour_page{
+    text-align: center;
+}
+
+#container_all_booking_tour_page #choose_infor_tour_mid_booking_form{
+    display: flex;
+    justify-content: space-around;
+}
+
+#container_all_booking_tour_page #container_bottom_booking_form #container_bottom_booking_form_on_top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#container_all_booking_tour_page #container_bottom_booking_form #container_bottom_booking_form_on_mid .btn_choose,
+#container_all_booking_tour_page #container_bottom_booking_form #container_bottom_booking_form_on_top .btn_choose{
+    height: 30px;
+    background-color: pink;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+#container_all_booking_tour_page #container_bottom_booking_form #container_bottom_booking_form_on_mid .btn_choose:hover,
+#container_all_booking_tour_page #container_bottom_booking_form #container_bottom_booking_form_on_top .btn_choose:hover {
+    background-color: crimson;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+#container_all_booking_tour_page #container_bottom_booking_form #container_bottom_booking_form_on_mid{
+    padding: 20px 30px;
+    text-align: center;
+}
+
+#container_all_booking_tour_page #container_bottom_booking_form #error_container_all_booking_tour_page {
+    color: var(--red-color);
+    text-align: center;
+}
+
+#container_all_booking_tour_page #h1_text_booking_tour{
+    height: auto;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+} 
+
+#container_all_booking_tour_page #h1_text_booking_tour h1{
+    color: var(--white-color);
+    font-size: 90px;
+    font-family: "Beyond";
+    /* margin: 50px; */
+    text-align: center;
+
 }
