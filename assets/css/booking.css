@@ -30,13 +30,13 @@ body{
 #container_all_booking_tour_page{
     background-color: var(--white-color);
     width: 70%;
-    height: 70%;
+    height: 90%;
     border-radius: 40px;
     display: grid;
     margin-top: 0;
     margin-bottom: 0;
     padding: 20px;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr;
     
     /* margin: auto;
      */
@@ -113,4 +113,18 @@ body{
     /* margin: 50px; */
     text-align: center;
 
+}
+
+#hotel_info_booking_tour h3{
+    color: var(--black);
+}
+
+#hotel_info_booking_tour img{
+    height: 50px;
+    border-radius: 10px;
+}
+
+#hotel_info_booking_tour #some_amenities span{
+    margin: 10px 10px;
+    background-color: var(--bg-section);
 }

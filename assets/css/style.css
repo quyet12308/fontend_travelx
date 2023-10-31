@@ -425,6 +425,28 @@
     margin-right: 0;
 }
 
+#show_all_tour {
+    display: flex; /* Sử dụng flexbox */
+    align-items: center; /* Căn giữa dòng theo chiều dọc */
+    justify-content: center; /* Căn giữa dòng theo chiều ngang */
+  }
+  
+  #show_all_tour  #show_all_btn {
+    padding: 10px 20px; /* Khoảng cách giữa nút và vùng bao quanh nút */
+    border-radius: 20px; /* Bo tròn góc */
+    background-color: #fa9e1b; /* Màu nền */
+    color: #fff; /* Màu chữ */
+    text-align: center; /* Căn giữa nút */
+    transition: background-color 0.3s; /* Thời gian hiệu ứng khi di chuột vào */
+    margin: 20px 5px;
+  }
+  
+  #show_all_tour #show_all_btn:hover {
+    background-color: #ccc; /* Màu nền thay đổi khi di chuột vào */
+    cursor: pointer; /* Con trỏ chuột thành dạng bấm */
+    color: #000;
+  }
+
 .tour__btn__bgc {
     position: absolute;
     top: 0;
@@ -438,6 +460,7 @@
 }
 
 .tour__btn__bgc h5{
+    
     text-align: center;
 }
 

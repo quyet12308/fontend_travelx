@@ -382,11 +382,12 @@ document.addEventListener('DOMContentLoaded',async ()=> {
     star_offer.addEventListener("change",async()=>{
         // console.log(star_offer.value)
         // price.value = "Hiển thị tất cả"
-        console.log(price_offer.value)
-        console.log(name_hotel_offer.value)
-        console.log(star_offer.value)
-        console.log(distance_offer.value)
-        console.log(review_offer.value)
+        console.log("star")
+        // console.log(price_offer.value)
+        // console.log(name_hotel_offer.value)
+        // console.log(star_offer.value)
+        // console.log(distance_offer.value)
+        // console.log(review_offer.value)
 
         data2 = {
             default:"no",

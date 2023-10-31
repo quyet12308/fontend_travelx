@@ -27,6 +27,11 @@ document.addEventListener('DOMContentLoaded', async ()=> {
         number_of_stars = message.number_of_stars
         number_of_travel_days = message.number_of_travel_days
         five_day_weather_datas = message.five_day_weather_datas
+        hotel_info = message.hotel_info
+
+        sessionStorage.setItem("hotel_info",hotel_info)
+        sessionStorage.setItem("price",price)
+        sessionStorage.setItem("number_of_travel_days",number_of_travel_days)
 
         // weather data 
         

@@ -43,6 +43,9 @@ document.addEventListener('DOMContentLoaded', async function() {
         if(avatar_img_ === null){
             avatar_img_ = "../assets/images/icon_persion.jpg"
         }
+        else{
+          sessionStorage.setItem("avatar_img",avatar_img_)
+        }
         
         container.innerHTML = `
         <div id="container_left">

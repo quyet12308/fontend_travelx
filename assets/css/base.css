@@ -493,6 +493,8 @@ body {
     cursor: pointer;
 }
 
+
+
 .container__contact__info span:hover {
     color: var(--yellow);
 }
@@ -506,6 +508,7 @@ body {
 .container__contact__info--img img {
     display: block;
     max-width: 100%;
+    /* width: 20px; */
 }
 
 .copyright {

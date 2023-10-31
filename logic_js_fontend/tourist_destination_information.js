@@ -68,7 +68,44 @@ document.addEventListener('DOMContentLoaded', async ()=> {
         let id_name_tours = [id_name_tour0,id_name_tour1,id_name_tour2]
         console.log("abc")   
         for(let i = 0; i< 3;i ++) {
-          
+        let integerPart = Math.trunc(number_of_stars_arr[i])
+        if(integerPart == 3){
+          star_html = `
+          <div class="item_rating"> 
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <h4 > ${number_of_stars_arr[i]}</h4>
+                    </div>
+          `
+
+        }
+        else if (integerPart == 4){
+          star_html = `
+          <div class="item_rating"> 
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <h4 > ${number_of_stars_arr[i]}</h4>
+                    </div>
+          `
+        }
+        else if (integerPart == 5){
+          star_html = `
+          <div class="item_rating"> 
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <i class="fa fa-star"></i>
+                      <h4 > ${number_of_stars_arr[i]}</h4>
+                    </div>
+          `
+        }
           // console.log(id_name_tours[i])
           // console.log(typeof id_name_tours[i])
         tourist_destination_information_tour.innerHTML += 
@@ -84,15 +121,7 @@ document.addEventListener('DOMContentLoaded', async ()=> {
                   <div class="item_center">
                     <h2>${tourist_destination_name_arr[i]}</h2>
                     <div class="item_price">From ${price_arr[i]}$</div>
-                    <div class="item_rating">
-                      
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <i class="fa fa-star"></i>
-                      <h4 > ${number_of_stars_arr[i]}</h4>
-                    </div>
+                    ${star_html}
                     <div class="tour__item--btn">
                       <div class="tour__btn__bgc"></div>
                       <div id="id_tourist_destination_information_tour0"  onclick="check_login('${tourist_destination_name_arr[i]}')"><h5>See more</h5>

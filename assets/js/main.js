@@ -2,6 +2,26 @@ const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 
 document.addEventListener('DOMContentLoaded',  function() {
+
+    show_all_btn = document.querySelector("#show_all_tour #show_all_btn");
+
+    show_all_btn.addEventListener("click",()=>{
+        console.log("ham hoat dong")
+        function containsPage(str) {
+            return str.includes("pages");
+          }
+          let currentURL = window.location.href;
+          
+          if(containsPage(currentURL)){
+            window.location.href = "show_all_tour.html"
+          }
+          else{
+            window.location.href = "pages/show_all_tour.html"
+          }
+          
+          
+            
+    })
     // Scroll Top
 var scrollTop = () => {
     var header = $(".header");
@@ -142,3 +162,5 @@ id_register.addEventListener("click",()=>{
 
 
 })
+
+

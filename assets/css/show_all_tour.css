@@ -1,0 +1,124 @@
+:root {
+    --grey-color: rgb(122, 117, 117);
+    --red-color: #f40d0d;
+    --primary-color: #fa9e1b;
+    --white-color: #fff;
+    --violet: #8d4fff;
+    --yellow: #fa9e1b;
+    --black: #2d2c2c;
+    --btn-black: #31124b;
+    --bg-header: rgba(54, 19, 84, .6);
+    --bg-header-scroll: rgba(54, 19, 84, .85);
+    --bg-btn: linear-gradient(to right, #fa9e1b, #8d4fff, #fa9e1b);
+    --bg-section: linear-gradient(to right, #fa9e1b, #8d4fff);
+    --offer-color: #eda84a;
+    --border: linear-gradient(to right, #fa9e1b, #8d4fff);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 ,h4,p{
+    text-align: center;
+}
+
+h2 {
+    margin-top: 30px;
+    display: inline-block;
+    text-align: center;
+}
+
+#tour_containers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.tour {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+.tour .tour-info {
+    margin-bottom: 10px;
+}
+
+.tour .tour-info span {
+    font-weight: bold;
+}
+
+.tour .tour-info .label {
+    color: #777;
+}
+
+.tour .tour-info .value {
+    margin-left: 5px;
+}
+
+.tour .tour-info .date {
+    font-style: italic;
+}
+
+.tour .tour-info .hotel {
+    margin-top: 5px;
+}
+
+.tour_container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.tour_container img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.tour_container h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.tour_container h4 {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.tour_container p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.button_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.button_container .see_more {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #eaeaea;
+    color: #333;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button_container .see_more:hover {
+    background-color: #ccc;
+  }
