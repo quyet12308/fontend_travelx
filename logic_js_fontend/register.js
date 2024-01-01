@@ -1,5 +1,5 @@
-url_register_basic = "http://localhost:8080/api/register_basic"
-url_register_confirm = "http://localhost:8080/api/register_confirm_code_email"
+url_register_basic = "http://localhost:8010/api/register_basic"
+url_register_confirm = "http://localhost:8010/api/register_confirm_code_email"
 
 
 document.addEventListener('DOMContentLoaded', function() {

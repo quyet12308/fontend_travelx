@@ -1,5 +1,5 @@
-url_my_booking_tour = "http://localhost:8080/api/my_booking_tour"
-url_delete_my_booking_tour = "http://localhost:8080/api/delete_my_booking_tour"
+url_my_booking_tour = "http://localhost:8010/api/my_booking_tour"
+url_delete_my_booking_tour = "http://localhost:8010/api/delete_my_booking_tour"
 
 let delete_my_booking_tour = async (timeCheckin,created_time)=>{
   let login_email = sessionStorage.getItem('email_login')

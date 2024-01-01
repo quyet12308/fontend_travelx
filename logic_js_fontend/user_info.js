@@ -1,5 +1,5 @@
-url_get_user_infor = "http://localhost:8080/api/get_user_infor";
-url_edit_user_infor = "http://localhost:8080/api/edit_user_infor";
+url_get_user_infor = "http://localhost:8010/api/get_user_infor";
+url_edit_user_infor = "http://localhost:8010/api/edit_user_infor";
 
 document.addEventListener('DOMContentLoaded', async function() {
     // time

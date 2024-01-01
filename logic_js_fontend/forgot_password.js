@@ -1,5 +1,5 @@
-url_forgot_password_basic = "http://localhost:8080/api/forgot_password_basic"
-url_forgot_password_confirm = "http://localhost:8080/api/forgot_password_confirm_code_email"
+url_forgot_password_basic = "http://localhost:8010/api/forgot_password_basic"
+url_forgot_password_confirm = "http://localhost:8010/api/forgot_password_confirm_code_email"
 
 
 document.addEventListener('DOMContentLoaded', function() {

@@ -1,4 +1,4 @@
-url_offer = "http://localhost:8080/api/get_offer_data"
+url_offer = "http://localhost:8010/api/get_offer_data"
 
 document.addEventListener('DOMContentLoaded',async ()=> {
     // price

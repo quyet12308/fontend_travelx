@@ -1,4 +1,4 @@
-url_login_basic = "http://localhost:8080/api/login_basic"
+url_login_basic = "http://localhost:8010/api/login_basic"
 
 document.addEventListener('DOMContentLoaded',  function() {
     var loginForm = document.getElementById('login-form');

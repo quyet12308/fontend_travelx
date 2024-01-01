@@ -1,4 +1,4 @@
-url_get_data = "http://localhost:8080/api/get_tourist_destination_information"
+url_get_data = "http://localhost:8010/api/get_tourist_destination_information"
 
 function containsPage(str) {
   return str.includes("pages");

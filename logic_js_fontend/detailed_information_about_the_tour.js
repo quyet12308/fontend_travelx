@@ -1,4 +1,4 @@
-let url_detailed_basic = "http://localhost:8080/api/get_tourist_destination_information_by_name"
+let url_detailed_basic = "http://localhost:8010/api/get_tourist_destination_information_by_name"
 
 function containsPage(str) {
   return str.includes("pages");

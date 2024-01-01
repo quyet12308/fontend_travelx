@@ -1,4 +1,4 @@
-url = "http://localhost:8080/api/show_all_tour"
+url = "http://localhost:8010/api/show_all_tour"
 
 let detailed_information_about_the_tour = async (name_tour)=>{
     sessionStorage.setItem("tourist_destination_name",name_tour)

@@ -1,4 +1,4 @@
-url_contact_basic = "http://localhost:8080/api/contact_basic"
+url_contact_basic = "http://localhost:8010/api/contact_basic"
 
 document.addEventListener('DOMContentLoaded', function() {
 

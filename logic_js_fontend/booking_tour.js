@@ -1,4 +1,4 @@
-let url_booking_tour = "http://localhost:8080/api/booking_tour"
+let url_booking_tour = "http://localhost:8010/api/booking_tour"
 
 let tour_price = (adults,children,price)=>{
     // Giá tour khi có 2 người lớn và 1 trẻ em (giá mặc định)
@@ -187,10 +187,12 @@ document.addEventListener('DOMContentLoaded',  function() {
 
         if (response_data3.status){
             alert(response_data3.message)
+            window.location.href = "home.html"
         }
         else{
             alert(response_data3.message)
         }
+
 
         
     })
