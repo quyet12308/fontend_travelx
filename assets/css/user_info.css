@@ -1,0 +1,109 @@
+:root {
+    --grey-color: rgb(122, 117, 117);
+    --red-color: #f40d0d;
+    --primary-color: #fa9e1b;
+    --white-color: #fff;
+    --violet: #8d4fff;
+    --yellow: #fa9e1b;
+    --black: #2d2c2c;
+    --btn-black: #31124b;
+    --bg-header: rgba(54, 19, 84, .6);
+    --bg-header-scroll: rgba(54, 19, 84, .85);
+    --bg-btn: linear-gradient(to right, #fa9e1b, #8d4fff, #fa9e1b);
+    --bg-section: linear-gradient(to right, #fa9e1b, #8d4fff);
+    --offer-color: #eda84a;
+    --border: linear-gradient(to right, #fa9e1b, #8d4fff);
+}
+
+body{
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    width: 100%;
+    height: 700px;
+    background: var(--bg-btn) */
+     background: linear-gradient(to right, #fa9e1b, #8d4fff, #fa9e1b);
+}
+
+#container{
+    background-color: var(--white-color);
+    width: 70%;
+    height: 70%;
+    border-radius: 40px;
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 20px;
+    margin: 80px auto;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 10px 9px rgba(0, 0, 0, 0.5);
+}
+
+#container #container_left #img_avata img{
+    height: 350px;
+    width: 350px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+#container #container_left #change_avatar {
+align-items: center;
+text-align: center;
+padding: 20px;
+/* margin-top: 20px; */
+}
+
+#container #container_right{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#container #container_right h3 {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 8px;
+    text-shadow: 1px 1px #999;
+}
+
+#container #container_right #error_edit_user{
+    color: var(--red-color);
+}
+
+#container #container_right label{
+    text-align: right;
+    color: black;
+    margin-top: -20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.information__small-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#username_text,
+#birthday_text,
+#password_text {
+    width: 100%;
+    max-width: 200px;
+}
+
+.summit__btn-css {
+   padding: 8px 12px;
+   font-size: 16px;
+    font-weight: 600;
+    float: right;
+    margin-bottom: -24px 
+}
+
+#change_avatar button {
+    padding: 8px 12px;
+    font-size: 16px;
+    font-weight: 600;
+}

@@ -1,0 +1,195 @@
+:root {
+    --grey-color: rgb(122, 117, 117);
+    --red-color: #f40d0d;
+    --primary-color: #fa9e1b;
+    --white-color: #fff;
+    --violet: #8d4fff;
+    --yellow: #fa9e1b;
+    --black: #2d2c2c;
+    --btn-black: #31124b;
+    --bg-header: rgba(54, 19, 84, .6);
+    --bg-header-scroll: rgba(54, 19, 84, .85);
+    --bg-btn: linear-gradient(to right, #fa9e1b, #8d4fff, #fa9e1b);
+    --bg-section: linear-gradient(to right, #fa9e1b, #8d4fff);
+    --offer-color: #eda84a;
+    --border: linear-gradient(to right, #fa9e1b, #8d4fff);
+}
+
+body{
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    width: 100%;
+    height: 700px; */
+    background: var(--bg-btn)
+    
+}
+
+#container_all_booking_tour_page{
+    width: 70%;
+    height: 90%;
+    border-radius: 40px;
+    display: grid;
+    margin: 60px auto;
+    padding: 20px;
+    grid-template-rows: 1fr 1fr 2fr;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 10px 9px rgba(0, 0, 0, 0.5);
+    /* margin: auto;
+     */
+    /* justify-content: center; */
+}
+
+#container_all_booking_tour_page #logo_booking_tour_page{
+    height: 90px;
+}
+
+#container_all_booking_tour_page #user_infor_in_booking_tour_page{
+    display: inline-block;
+    /* text-align: center; */
+    margin-left: 50px;
+}
+
+#container_all_booking_tour_page #name_tour_in_booking_tour_page{
+    text-align: center;
+}
+
+#container_all_booking_tour_page #choose_infor_tour_mid_booking_form{
+    display: flex;
+    justify-content: space-around;
+}
+
+#container_all_booking_tour_page #container_bottom_booking_form #container_bottom_booking_form_on_top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -60px ;
+}
+
+#container_all_booking_tour_page #container_bottom_booking_form #container_bottom_booking_form_on_mid .btn_choose,
+#container_all_booking_tour_page #container_bottom_booking_form #container_bottom_booking_form_on_top .btn_choose{
+    height: 30px;
+    background-color: pink;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+#container_all_booking_tour_page #container_bottom_booking_form #container_bottom_booking_form_on_mid .btn_choose:hover,
+#container_all_booking_tour_page #container_bottom_booking_form #container_bottom_booking_form_on_top .btn_choose:hover {
+    background-color: crimson;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  }
+
+#container_all_booking_tour_page #container_bottom_booking_form #container_bottom_booking_form_on_mid{
+    padding: 20px 30px;
+    text-align: center;
+}
+
+#container_all_booking_tour_page #container_bottom_booking_form #error_container_all_booking_tour_page {
+    color: var(--red-color);
+    text-align: center;
+}
+
+#container_all_booking_tour_page #h1_text_booking_tour{
+    height: auto;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+} 
+
+#container_all_booking_tour_page #h1_text_booking_tour h1{
+    color: var(--white-color);
+    font-size: 90px;
+    font-family: "Beyond";
+    /* margin: 50px; */
+    text-align: center;
+
+}
+
+#hotel_info_booking_tour h3{
+    color: var(--black);
+}
+
+#hotel_info_booking_tour img{
+    height: 240px;
+    width: 270px;
+    border-radius: 10px;
+}
+
+#hotel_info_booking_tour #some_amenities span{
+    margin: 10px 10px;
+    background-color: var(--bg-section);
+}
+
+#container_top_booking_form {
+    color: var(--black);
+}
+
+#container_mid_booking_form h2 {
+    color: #333;
+    text-shadow: 1px 4px white;
+    font-size: 36px;
+    margin: -60px 0 30px 0;
+}
+
+#container_mid_booking_form h3 {
+    color: var(--black);
+    margin-bottom: 14px ;
+}
+
+#day_to_star_tour,
+#adultsSelect_in_booking_tour_page,
+#childrenSelect_in_booking_tour_page {
+    height: 36px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#container_bottom_booking_form_on_top {
+    margin: 0 60px;
+    color: var(--black);
+    
+}
+
+#hotel_info_booking_tour span {
+   font-size: 16px;
+   color: var(--black);
+   font-weight: 600;
+   text-align: center;
+}
+
+#hotel_info_booking_tour h3 {
+    margin: 20px 0 ;
+   font-size: 22px;
+   text-align: center;
+}
+
+#hotel_info_booking_tour p {
+    text-indent: 30px;
+    text-align: justify;
+}
+
+.hotel_info-desc {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hotel_info-desc p {
+    margin-left: 30px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#some_amenities {
+    margin-top: 24px;
+}
